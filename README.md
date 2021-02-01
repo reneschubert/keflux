@@ -1,12 +1,9 @@
 keflux
 ==============================
-[![Build Status](https://github.com/reneschubert/keflux/workflows/Tests/badge.svg)](https://github.com/reneschubert/keflux/actions)
-[![codecov](https://codecov.io/gh/reneschubert/keflux/branch/master/graph/badge.svg)](https://codecov.io/gh/reneschubert/keflux)
-[![License:MIT](https://img.shields.io/badge/License-MIT-lightgray.svg?style=flt-square)](https://opensource.org/licenses/MIT)[![pypi](https://img.shields.io/pypi/v/keflux.svg)](https://pypi.org/project/keflux)
-<!-- [![conda-forge](https://img.shields.io/conda/dn/conda-forge/keflux?label=conda-forge)](https://anaconda.org/conda-forge/keflux) -->[![Documentation Status](https://readthedocs.org/projects/keflux/badge/?version=latest)](https://keflux.readthedocs.io/en/latest/?badge=latest)
 
+A python package to compute the flux of oceanic kinetic energy across spatial scales from 2D velocity fields at a specific depth using a coarse-graining approach.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4476094.svg)](https://doi.org/10.5281/zenodo.4476094)
 
-Computing the oceanic kinetic energy flux across spatial scales using coarse-graining
 
 --------
 
