@@ -2,6 +2,7 @@ keflux
 ==============================
 
 A python package to compute the flux of oceanic kinetic energy across spatial scales from 2D velocity fields at a specific depth using a coarse-graining approach.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4476094.svg)](https://doi.org/10.5281/zenodo.4476094)
 
 
