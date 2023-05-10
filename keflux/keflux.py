@@ -71,7 +71,7 @@ def comp_keflux(u,v,lon_x,lat_y,scales,variant,gs):
 
             # compute the scale kinetic energy flux
             rho_0 = 1024 # define standard density in kg/m³
-            pi_tmp = -1 * rho_0 * ((uum - um ** 2) * dumdx + (uvm - um * vm) * (dumdy + dvmdy) + (vvm - vm ** 2) * dvmdy)
+            pi_tmp = -1 * rho_0 * ((uum - um ** 2) * dumdx + (uvm - um * vm) * (dumdy + dvmdx) + (vvm - vm ** 2) * dvmdy)
             # set the pixels at the boundary to NaN, where the convolution kernel extends over the boundary
             pi_tmp2 = np.zeros((pi_tmp.shape)) + np.nan
             pi_tmp2[radius:-radius,radius:-radius] = pi_tmp[radius:-radius,radius:-radius]
@@ -121,7 +121,7 @@ def comp_keflux(u,v,lon_x,lat_y,scales,variant,gs):
             dvmdy = (vm[2:,1:-1]-vm[:-2,1:-1])/(gs*2*1000)
             # compute the scale kinetic energy flux
             rho_0 = 1024 # define standard density in kg/m³
-            pi_tmp = -1 * rho_0 * ((uum[1:-1,1:-1] - um[1:-1,1:-1] ** 2) * dumdx + (uvm[1:-1,1:-1] - um[1:-1,1:-1] * vm[1:-1,1:-1]) * (dumdy + dvmdy) + (vvm[1:-1,1:-1] - vm[1:-1,1:-1] ** 2) * dvmdy)  
+            pi_tmp = -1 * rho_0 * ((uum[1:-1,1:-1] - um[1:-1,1:-1] ** 2) * dumdx + (uvm[1:-1,1:-1] - um[1:-1,1:-1] * vm[1:-1,1:-1]) * (dumdy + dvmdx) + (vvm[1:-1,1:-1] - vm[1:-1,1:-1] ** 2) * dvmdy)  
             # set the pixels at the boundary to NaN, where the convolution kernel extends over the boundary
             pi_tmp2 = np.zeros((pi_tmp.shape)) + np.nan
             pi_tmp2[radius:-radius,radius:-radius] = pi_tmp[radius:-radius,radius:-radius]
